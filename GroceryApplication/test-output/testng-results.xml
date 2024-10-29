@@ -2,16 +2,23 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-14T12:44:47 IST" name="Default suite" finished-at="2024-10-14T12:44:58 IST" duration-ms="10936">
+  <suite started-at="2024-10-29T19:17:14 IST" name="GroceryApplication" finished-at="2024-10-29T19:17:37 IST" duration-ms="22756">
     <groups>
     </groups>
-    <test started-at="2024-10-14T12:44:47 IST" name="Default test" finished-at="2024-10-14T12:44:58 IST" duration-ms="10936">
+    <test started-at="2024-10-29T19:17:14 IST" name="ChromeTest" finished-at="2024-10-29T19:17:37 IST" duration-ms="22756">
       <class name="testCase.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:47 IST" name="beforeMethod" finished-at="2024-10-14T12:44:49 IST" duration-ms="2517" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:14 IST" name="beforeMethod" finished-at="2024-10-29T19:17:19 IST" duration-ms="5353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:49 IST" name="testCase01" data-provider="data-provider" finished-at="2024-10-14T12:44:50 IST" duration-ms="509" status="PASS">
+        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:19 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:21 IST" duration-ms="1431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,20 +33,34 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:50 IST" name="afterMethod" finished-at="2024-10-14T12:44:50 IST" duration-ms="223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:50 IST" name="beforeMethod" finished-at="2024-10-14T12:44:52 IST" duration-ms="1870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:52 IST" name="testCase01" data-provider="data-provider" finished-at="2024-10-14T12:44:52 IST" duration-ms="397" status="PASS">
+        </test-method> <!-- verifyLoginWithInValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:21 IST" name="afterMethode" finished-at="2024-10-29T19:17:21 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[demo]]>
+                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:21 IST" name="beforeMethod" finished-at="2024-10-29T19:17:24 IST" duration-ms="3254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:24 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:25 IST" duration-ms="836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
               </value>
             </param>
             <param index="1">
@@ -50,60 +71,83 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:52 IST" name="afterMethod" finished-at="2024-10-14T12:44:53 IST" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:53 IST" name="beforeMethod" finished-at="2024-10-14T12:44:54 IST" duration-ms="1830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:54 IST" name="testCase01" data-provider="data-provider" finished-at="2024-10-14T12:44:55 IST" duration-ms="541" status="PASS">
+        </test-method> <!-- verifyLoginWithInValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:25 IST" name="afterMethode" finished-at="2024-10-29T19:17:25 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
+                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:55 IST" name="afterMethod" finished-at="2024-10-14T12:44:55 IST" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:55 IST" name="beforeMethod" finished-at="2024-10-14T12:44:57 IST" duration-ms="1824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:57 IST" name="testCase01" data-provider="data-provider" finished-at="2024-10-14T12:44:58 IST" duration-ms="456" status="PASS">
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:25 IST" name="beforeMethod" finished-at="2024-10-29T19:17:28 IST" duration-ms="3347" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.LoginPageTest@4562e04d]" started-at="2024-10-14T12:44:58 IST" name="afterMethod" finished-at="2024-10-14T12:44:58 IST" duration-ms="215" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:28 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:29 IST" duration-ms="833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
+        </test-method> <!-- verifyLoginWithInValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:29 IST" name="afterMethode" finished-at="2024-10-29T19:17:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:29 IST" name="beforeMethod" finished-at="2024-10-29T19:17:33 IST" duration-ms="3570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:33 IST" name="verifyLoginWithValidData" finished-at="2024-10-29T19:17:37 IST" duration-ms="4057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:37 IST" name="afterMethode" finished-at="2024-10-29T19:17:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidData status=SUCCESS method=LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
       </class> <!-- testCase.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- GroceryApplication -->
 </testng-results>
