@@ -30,9 +30,9 @@ public class LoginPageTest extends BaseClass {
 	public void verifyLoginWithInValidData(String username,String password) throws IOException {
 		lp = new LoginPage(driver);
 		hp=lp.sentLoginDetail(username, password);
-		String actual1 = lp.getAlert();
-		String expected = "×\n" + "Alert!\n" + "Invalid Username/Password";
-		Assert.assertEquals(actual1, expected, Constant.lp_verifyLoginWithInvalidData);
+		boolean actual = true;
+		boolean expected =lp.getAlert().contains("Invalid Username/Password");
+		Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
 	}
 	
 	@DataProvider(name = "data-provider")

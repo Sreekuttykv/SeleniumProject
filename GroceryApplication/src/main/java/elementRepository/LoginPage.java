@@ -28,6 +28,7 @@ public class LoginPage {
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alertMessage;
 	
+	
 	public HomePage loginByUsingExcelData() throws IOException
 	{
 		String username=ExcelUtility.readStringData(1, 0,"LoginPage1");

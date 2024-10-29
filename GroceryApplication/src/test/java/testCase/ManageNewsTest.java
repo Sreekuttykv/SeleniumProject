@@ -39,7 +39,7 @@ public class ManageNewsTest extends BaseClass {
 		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert,Constant.lp_editNews);
 	  
   }
-  @Test
+  @Test(groups="smoke")
   public void deleteNews() throws IOException
   {
 	  	lp = new LoginPage(driver);
