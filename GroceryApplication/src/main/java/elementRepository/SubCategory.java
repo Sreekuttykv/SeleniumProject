@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import constant.Constant;
+
 import utilities.GeneralUtilities;
 import utilities.WaitUtilities;
 
@@ -71,7 +71,8 @@ public class SubCategory {
 		newSubCategoryButton.click();
 		gu.selectDropdownWithVisibleText(subCategoryDropdown, "Apple");
 		subCategoryText.sendKeys(subCategoryName);
-		chooseFile.sendKeys(Constant.IMAGEFILE);
+		String imagefile=System.getProperty("user.dir")+"\\src\\main\\resources\\apple.jpg";
+		chooseFile.sendKeys(imagefile);
 		saveButton.click();
 	}
 	public String getsubCategoryname()

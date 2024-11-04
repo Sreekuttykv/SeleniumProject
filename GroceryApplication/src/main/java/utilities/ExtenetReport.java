@@ -16,8 +16,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtenetReport implements ITestListener {
 	ExtentSparkReporter sparkReporter;  //This class handles the creation and configuration of an HTML report
-	ExtentReports reports; //Main report manager class, managing the lifecycle of the report.
-	ExtentTest test;  // Represents each test case that is added to the report.
+	ExtentReports reports; //Main report manager class, managing the lifecycle of the report. html file link(to connect with overall reports)
+	ExtentTest test;  // Represents each test case that is added to the report.(login info about each testcase pass/fail/skip)
 
 	public void configureReport() {
 		Date date = new Date(); 

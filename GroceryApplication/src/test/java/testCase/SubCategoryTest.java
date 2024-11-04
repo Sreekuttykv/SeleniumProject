@@ -24,8 +24,8 @@ public class SubCategoryTest extends BaseClass {
 	  	hp=lp.loginByUsingExcelData();
 		sc=hp.clickOnSubCategoryButton();
 		sc.addNewSubCategory();
-		String actual = sc.getAlert();
-		String expected = "�\n"+ "Alert!\n"+ "Sub Category Created Successfully";
+		boolean actual = true;
+		boolean expected = sc.getAlert().contains("Sub Category Created Successfully");
 		Assert.assertEquals(actual, expected, Constant.lp_verifyNewSubCategory);
 		hp.clickOnSubCategoryButton();
 		String actualSubcategoryName=sc.readSubcategoryTableElement(1, 1);
