@@ -12,10 +12,9 @@
 			<class name="testCase.ManageContactTest"></class>
 			<class name="testCase.AdminUserTest"></class>
 			<class name="testCase.CategoryTest"></class>
-			
+
 		</classes>
 	</test>
-	
 	<test name="FirefoxTest">
 		<listeners>
 			<listener class-name="utilities.ExtenetReport" />
@@ -30,6 +29,6 @@
 			<class name="testCase.AdminUserTest"></class>
 			<class name="testCase.CategoryTest"></class>
 		</classes>
-	</test>  
+	</test>
 
 </suite>

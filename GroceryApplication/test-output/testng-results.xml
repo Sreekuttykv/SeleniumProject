@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-29T19:17:14 IST" name="GroceryApplication" finished-at="2024-10-29T19:17:37 IST" duration-ms="22756">
+  <suite started-at="2024-11-04T10:41:02 IST" name="GroceryApplication" finished-at="2024-11-04T10:41:34 IST" duration-ms="31958">
     <groups>
     </groups>
-    <test started-at="2024-10-29T19:17:14 IST" name="ChromeTest" finished-at="2024-10-29T19:17:37 IST" duration-ms="22756">
-      <class name="testCase.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:14 IST" name="beforeMethod" finished-at="2024-10-29T19:17:19 IST" duration-ms="5353" status="PASS">
+    <test started-at="2024-11-04T10:41:02 IST" name="ChromeTest" finished-at="2024-11-04T10:41:34 IST" duration-ms="31958">
+      <class name="testCase.ManageContactTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:02 IST" name="beforeMethod" finished-at="2024-11-04T10:41:06 IST" duration-ms="3403" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,34 +18,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:19 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:21 IST" duration-ms="1431" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="editContact()[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:06 IST" name="editContact" finished-at="2024-11-04T10:41:28 IST" duration-ms="22575" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d28d118a3af3ff3ad226b072a0530e8, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\SREEKU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d28d118a3af3ff3ad226b072a0530e8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d28d118a3af3ff3ad226b072a0530e8, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\SREEKU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d28d118a3af3ff3ad226b072a0530e8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+at elementRepository.ManageContact.getUpdateAlert(ManageContact.java:54)
+at testCase.ManageContactTest.editContact(ManageContactTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:21 IST" name="afterMethode" finished-at="2024-10-29T19:17:21 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- editContact -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:28 IST" name="afterMethode" finished-at="2024-11-04T10:41:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
+                <![CDATA[[TestResult name=editContact status=SKIP method=ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@5a2d131d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:21 IST" name="beforeMethod" finished-at="2024-10-29T19:17:24 IST" duration-ms="3254" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:28 IST" name="beforeMethod" finished-at="2024-11-04T10:41:31 IST" duration-ms="3028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,98 +113,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:24 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:25 IST" duration-ms="836" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="editContact()[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:31 IST" name="editContact" finished-at="2024-11-04T10:41:34 IST" duration-ms="2712" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:25 IST" name="afterMethode" finished-at="2024-10-29T19:17:25 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- editContact -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageContactTest@5a2d131d]" started-at="2024-11-04T10:41:34 IST" name="afterMethode" finished-at="2024-11-04T10:41:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
+                <![CDATA[[TestResult name=editContact status=SUCCESS method=ManageContactTest.editContact()[pri:0, instance:testCase.ManageContactTest@5a2d131d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:25 IST" name="beforeMethod" finished-at="2024-10-29T19:17:28 IST" duration-ms="3347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:28 IST" name="verifyLoginWithInValidData" data-provider="data-provider" finished-at="2024-10-29T19:17:29 IST" duration-ms="833" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:29 IST" name="afterMethode" finished-at="2024-10-29T19:17:29 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidData status=SUCCESS method=LoginPageTest.verifyLoginWithInValidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:29 IST" name="beforeMethod" finished-at="2024-10-29T19:17:33 IST" duration-ms="3570" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:33 IST" name="verifyLoginWithValidData" finished-at="2024-10-29T19:17:37 IST" duration-ms="4057" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidData -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@6e20b53a]" started-at="2024-10-29T19:17:37 IST" name="afterMethode" finished-at="2024-10-29T19:17:37 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidData status=SUCCESS method=LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@6e20b53a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.LoginPageTest -->
+      </class> <!-- testCase.ManageContactTest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- GroceryApplication -->
 </testng-results>

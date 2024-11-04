@@ -32,7 +32,6 @@ public class CategoryPage {
 	WebElement saveButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement addAlert;
-	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/category/delete?del=479&page_ad=1']//i")
 	@FindBy(xpath="//i[@class='fas fa-trash-alt']")
 	WebElement deleteButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
@@ -47,11 +46,6 @@ public class CategoryPage {
 		this.CategoryName=CategoryName;
 		categoryTextArea.sendKeys(CategoryName);
 		discountElement.click();
-		/*JavascriptExecutor js = (JavascriptExecutor) driver;
-		for (int i = 0; i < 5; i++) { // Scrolls down 5 times, for example
-		    js.executeScript("window.scrollBy(0, 400)"); // Adjust pixel count as needed
-		    Thread.sleep(500); // Pause briefly to allow page loading or AJAX content
-		}*/
 		gu.clickJavaScriptExecutorByLoop(driver);
 		wu.explicitWaitUntilVisible(driver, saveButton);
 		saveButton.click();		
@@ -63,8 +57,7 @@ public class CategoryPage {
 	public void readTableElement(int row,int column)
 	{
 		String path="//table[@class=table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td["+column+"]";
-		WebElement element=driver.findElement(By.xpath(path));
-		
+		WebElement element=driver.findElement(By.xpath(path));	
 	}
 	public void deleteCategory()
 	{

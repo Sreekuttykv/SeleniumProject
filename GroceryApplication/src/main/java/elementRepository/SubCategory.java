@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import constant.Constant;
 import utilities.GeneralUtilities;
 import utilities.WaitUtilities;
 
@@ -70,7 +71,7 @@ public class SubCategory {
 		newSubCategoryButton.click();
 		gu.selectDropdownWithVisibleText(subCategoryDropdown, "Apple");
 		subCategoryText.sendKeys(subCategoryName);
-		chooseFile.sendKeys("C:\\Users\\SREEKUTTY K V\\Pictures\\apple.jpg");
+		chooseFile.sendKeys(Constant.IMAGEFILE);
 		saveButton.click();
 	}
 	public String getsubCategoryname()
@@ -100,7 +101,7 @@ public class SubCategory {
 	{
 		searchSubCategoryButton.click();
 		gu.selectDropdownWithVisibleText(searchSubCategoryDropdown, "Apple");
-		String searchItem="JonaGold";
+		String searchItem="JonaGold"+gu.generateCurrentDateAndTime();
 		searchSubCategoryText.sendKeys(searchItem);
 		redSearchButton.click();
 	}
