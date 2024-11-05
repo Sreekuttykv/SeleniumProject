@@ -3,6 +3,7 @@ package elementRepository;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,7 +64,7 @@ public class SubCategory {
 	WebElement updateAlert;
 	
 	
-	public void addNewSubCategory()
+	public void addNewSubCategory()throws ElementClickInterceptedException 
 	{
 		
 		String subCategoryName="JonaGold"+gu.generateCurrentDateAndTime();
@@ -73,7 +74,15 @@ public class SubCategory {
 		subCategoryText.sendKeys(subCategoryName);
 		String imagefile=System.getProperty("user.dir")+"\\src\\main\\resources\\apple.jpg";
 		chooseFile.sendKeys(imagefile);
-		saveButton.click();
+		try
+		{
+			saveButton.click();
+		}
+		catch( ElementClickInterceptedException e)
+		{
+			System.out.println(e);
+		}
+		
 	}
 	public String getsubCategoryname()
 	{

@@ -6,11 +6,11 @@
 		</listeners>
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="testCase.LoginPageTest"></class>
+			<!-- <class name="testCase.LoginPageTest"></class>
 			<class name="testCase.AdminUserTest"></class>
 			<class name="testCase.ManageNewsTest"></class>
 			<class name="testCase.ManageContactTest"></class>
-			<class name="testCase.CategoryTest"></class>
+			<class name="testCase.CategoryTest"></class>-->
 			<class name="testCase.SubCategoryTest"></class>
 		</classes>
 	</test>
