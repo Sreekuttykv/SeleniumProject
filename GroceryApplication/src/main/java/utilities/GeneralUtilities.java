@@ -33,8 +33,7 @@ public class GeneralUtilities {
 		WebElement selectedElement = object.getFirstSelectedOption();
 		selectedElement.click();
 
-	}
-
+	} 
 	public void clickJavaScriptExecutor(WebElement element, WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", element);
@@ -104,6 +103,4 @@ public class GeneralUtilities {
 		boolean checkSelected=element.isSelected();
 		System.out.println(checkSelected);
     }
-
-
 }

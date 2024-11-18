@@ -19,7 +19,7 @@ public class SubCategoryTest extends BaseClass {
 	SubCategory sc;
 	
   @Test(groups="smoke")
-  public void verifyNewSubCategory() throws IOException {
+  public void verifyAddNewSubCategory() throws IOException {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
 		sc=hp.clickOnSubCategoryButton();
@@ -27,13 +27,9 @@ public class SubCategoryTest extends BaseClass {
 		boolean actual = true;
 		boolean expected = sc.getAlert().contains("Sub Category Created Successfully");
 		Assert.assertEquals(actual, expected, Constant.lp_verifyNewSubCategory);
-		hp.clickOnSubCategoryButton();
-		String actualSubcategoryName=sc.readSubcategoryTableElement(1, 1);
-		String expectedSubcategoryName=sc.getsubCategoryname();
-		Assert.assertEquals(actualSubcategoryName, expectedSubcategoryName,Constant.lp_verifyAddedSubCategory);	
   }
   @Test
-  public void deleteSubCategory() throws IOException
+  public void verifyDeleteSubCategory() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
@@ -44,7 +40,7 @@ public class SubCategoryTest extends BaseClass {
 		Assert.assertEquals(actualDeleteAlert,expectedDeleteAlert,Constant.lp_deleteSubCategory);
   }
   @Test 
-  public void searchSubCategory() throws IOException
+  public void verifySearchSubCategory() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
@@ -55,7 +51,7 @@ public class SubCategoryTest extends BaseClass {
 		Assert.assertEquals(actualsearchMeassage,expectedsearchMeassage,Constant.lp_searchSubCategory);
   }
   @Test(groups="smoke")
-  public void editSubCategory() throws IOException
+  public void verifyEditSubCategory() throws IOException
   {		
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();

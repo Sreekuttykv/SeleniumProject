@@ -38,7 +38,7 @@ public class ManageContact {
 	
 	public void editContact() 
 	{
-		wu.explicitWaitUntilClickable(driver, editButton);
+		wu.waitUntilClickable(driver, editButton);
 		editButton.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,5000)");

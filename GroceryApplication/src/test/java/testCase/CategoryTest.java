@@ -16,7 +16,7 @@ public class CategoryTest extends BaseClass {
 	CategoryPage cat;
 
 	@Test
-	public void addCategory() throws IOException, InterruptedException {
+	public void verifyAddNewCategory() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 		hp = lp.loginByUsingExcelData();
 		cat = hp.clickOnCategory();
@@ -27,7 +27,7 @@ public class CategoryTest extends BaseClass {
 	}
 
 	@Test
-	  public void deleteCategory()throws IOException {
+	  public void verifyDeleteCategory()throws IOException {
 			
 		lp=new LoginPage(driver);
 		hp=lp.loginByUsingExcelData();

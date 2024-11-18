@@ -17,9 +17,8 @@ public class ManageContactTest extends BaseClass {
 	HomePage hp;
 	ManageContact mc;
   @Test
-  public void editContact() throws IOException
+  public void verifyeditContact() throws IOException
   {
-	  
 	  	lp=new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
 		mc=hp.clickOnManageContact();
@@ -28,6 +27,4 @@ public class ManageContactTest extends BaseClass {
 		boolean expectedUpdateAlert=mc.getUpdateAlert().contains("Contact Updated Successfully");
 		Assert.assertEquals(actualUpdateAlert, expectedUpdateAlert,Constant.lp_editContact);
   }
-	
- 
 }

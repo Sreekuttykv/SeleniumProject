@@ -5,12 +5,13 @@
     <classes>
       <class name="testCase.SubCategoryTest">
         <methods>
-          <include name="deleteSubCategory"/>
-          <include name="verifyNewSubCategory"/>
+          <include name="verifyDeleteSubCategory"/>
+          <include name="verifyAddNewSubCategory"/>
+          <include name="verifyEditSubCategory"/>
           <include name="afterMethode"/>
           <include name="beforeMethod"/>
-          <include name="editSubCategory"/>
-          <include name="searchSubCategory"/>
+          <include name="verifyAddedSubCategory"/>
+          <include name="verifySearchSubCategory"/>
         </methods>
       </class> <!-- testCase.SubCategoryTest -->
     </classes>

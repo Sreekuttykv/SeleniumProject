@@ -19,7 +19,7 @@ public class AdminUserTest extends BaseClass {
 	AdminUser au;
 	
   @Test
-  public void addAdminUser() throws IOException
+  public void verifyAddNewAdminUser() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
@@ -30,7 +30,7 @@ public class AdminUserTest extends BaseClass {
 		Assert.assertEquals(actualAddAlert, expectedAddAlert,Constant.lp_verifyAddAdminUser);	
   }
   @Test
-  public void searchAdminUser() throws IOException
+  public void verifySearchAdminUser() throws IOException
   {
 	  	lp = new LoginPage(driver);
 		hp=lp.loginByUsingExcelData();
@@ -41,7 +41,7 @@ public class AdminUserTest extends BaseClass {
 		Assert.assertEquals(actualSearchAlert, expectedSearchAlert,Constant.lp_verifySearchAdminUser);	
   }
   @Test
-  public void deleteAdminUser() throws IOException
+  public void verifyDeleteAdminUser() throws IOException
   {
 	  lp = new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();

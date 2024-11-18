@@ -64,7 +64,7 @@ public class SubCategory {
 	WebElement updateAlert;
 	
 	
-	public void addNewSubCategory()throws ElementClickInterceptedException 
+	public void addNewSubCategory() 
 	{
 		
 		String subCategoryName="JonaGold"+gu.generateCurrentDateAndTime();
@@ -74,15 +74,7 @@ public class SubCategory {
 		subCategoryText.sendKeys(subCategoryName);
 		String imagefile=System.getProperty("user.dir")+"\\src\\main\\resources\\apple.jpg";
 		chooseFile.sendKeys(imagefile);
-		try
-		{
-			saveButton.click();
-		}
-		catch( ElementClickInterceptedException e)
-		{
-			System.out.println(e);
-		}
-		
+		saveButton.click();
 	}
 	public String getsubCategoryname()
 	{
