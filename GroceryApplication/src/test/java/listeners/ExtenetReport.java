@@ -33,7 +33,7 @@ public class ExtenetReport implements ITestListener {
 				System.getProperty("user.dir") + "//ExtentReport//" + "ExtentReport_" + strDate + ".html");
 		reports = new ExtentReports();   //ExtentReports is initialized to manage the reporting lifecycle, adding tests, and logging results.
 		reports.attachReporter(sparkReporter);  // associates the ExtentReports instance with sparkReporter, specifying that sparkReporter will handle the HTML report generation.
-
+  
 		reports.setSystemInfo("Project", "GroceryApplication");  //adding project details
 		reports.setSystemInfo("PC Name", "Sreekutty K V");
 		reports.setSystemInfo("OS", "Windows 11");

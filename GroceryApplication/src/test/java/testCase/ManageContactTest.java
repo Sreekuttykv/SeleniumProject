@@ -17,7 +17,7 @@ public class ManageContactTest extends BaseClass {
 	HomePage hp;
 	ManageContact mc;
   @Test
-  public void verifyeditContact() throws IOException
+  public void verifyEditTheExistingContact() throws IOException
   {
 	  	lp=new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();

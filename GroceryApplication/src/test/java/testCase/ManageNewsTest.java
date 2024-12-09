@@ -16,7 +16,7 @@ public class ManageNewsTest extends BaseClass {
 	ManageNews mn;
 	
   @Test
-  public void verifyAddNewNews() throws IOException {
+  public void verifyAddANewNewsWithValidDetails() throws IOException {
 		lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
 		mn=hp.clickOnManageNews();
@@ -28,7 +28,7 @@ public class ManageNewsTest extends BaseClass {
   }
 
   @Test(groups="smoke")
-  public void verifyEditNews() throws IOException
+  public void verifyEditTheExistingNews() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
@@ -40,7 +40,7 @@ public class ManageNewsTest extends BaseClass {
 	  
   }
   @Test(groups="smoke")
-  public void verifyDeleteNews() throws IOException
+  public void verifyDeleteTheExistingNews() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();
@@ -52,7 +52,7 @@ public class ManageNewsTest extends BaseClass {
 	  
   }
   @Test
-  public void searchNews() throws IOException
+  public void verifySearchTheNewsThatisNotPresentInTheList() throws IOException
   {
 	  	lp = new LoginPage(driver);
 	  	hp=lp.loginByUsingExcelData();

@@ -47,7 +47,7 @@ public class CategoryPage {
 		categoryTextArea.sendKeys(CategoryName);
 		discountElement.click();
 		gu.clickJavaScriptExecutorByLoop(driver);
-		wu.waitUntilVisible(driver, saveButton);
+		wu.waitUntilElementIsVisible(driver, saveButton);
 		saveButton.click();		
 	}
 	public String getAddAlert()
@@ -61,7 +61,7 @@ public class CategoryPage {
 	}
 	public void deleteCategory()
 	{
-		wu.waitUntilVisible(driver, deleteButton);
+		wu.waitUntilElementIsVisible(driver, deleteButton);
 		deleteButton.click();
 		driver.switchTo().alert().accept();	
 	}

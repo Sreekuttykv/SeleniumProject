@@ -64,7 +64,7 @@ public class SubCategory {
 	WebElement updateAlert;
 	
 	
-	public void addNewSubCategory() 
+	public void addANewSubCategoryWithValidDetails() 
 	{
 		
 		String subCategoryName="JonaGold"+gu.generateCurrentDateAndTime();

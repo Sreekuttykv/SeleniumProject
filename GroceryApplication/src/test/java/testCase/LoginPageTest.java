@@ -18,7 +18,7 @@ public class LoginPageTest extends BaseClass {
 	SoftAssert softAssert = new SoftAssert();
 
 	@Test
-	public void verifyLoginWithValidData() throws IOException {
+	public void verifyLoginWithValidCredentials() throws IOException {
 		lp = new LoginPage(driver);
 		hp=lp.loginByUsingExcelData();
 		String actual = hp.getHomePageText(); // text read from the pgm  
@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseClass {
 	}
 	
 	@Test(dataProvider = "data-provider")
-	public void verifyLoginWithInValidData(String username,String password) throws IOException {
+	public void verifyLoginWithInValidCredentials(String username,String password) throws IOException {
 		lp = new LoginPage(driver);
 		hp=lp.sentLoginDetail(username, password);
 		boolean actual = true;

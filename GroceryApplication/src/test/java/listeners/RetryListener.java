@@ -19,4 +19,6 @@ public class RetryListener implements IAnnotationTransformer {
 Class testClass: The class in which the test method is declared.
 Constructor testConstructor: The constructor of the test method (if applicable).
 Method testMethod: The actual test method being executed.  
-annotation.setRetryAnalyzer(Retry.class); This line tells TestNG to use the Retry class (defined previously) as the retry analyzer for the test method. As a result, if the test method fails, the retry logic defined in the Retry class will automatically apply   */
+annotation.setRetryAnalyzer(Retry.class); This line tells TestNG to use the Retry class (defined previously)
+ as the retry analyzer for the test method. As a result, if the test method fails, the retry logic defined 
+ in the Retry class will automatically apply   */
